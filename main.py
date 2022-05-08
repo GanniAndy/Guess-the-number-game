@@ -1,21 +1,17 @@
 import random
 from time import sleep
-def prGreen(skk): print("\033[92m {}\033[00m" .format(skk))
-def prCyan(skk): print("\033[96m {}\033[00m" .format(skk))
-def prYellow(skk): print("\033[93m {}\033[00m" .format(skk))
-def prLightPurple(skk): print("\033[94m {}\033[00m" .format(skk))
-prCyan('@@@@@@@  @    @  @@@@@@    @@@@@@  @@@@@@  @     @  @@@@@@\n'
+print('@@@@@@@  @    @  @@@@@@    @@@@@@  @@@@@@  @     @  @@@@@@\n'
       '   @     @    @  @         @       @    @  @ @ @ @  @    \n' 
       '   @     @@@@@@  @@@@@     @  @@@  @@@@@@  @  @  @  @@@@@\n'
       '   @     @    @  @         @    @  @    @  @     @  @    \n'
       '   @     @    @  @@@@@@    @@@@@@  @    @  @     @  @@@@@@')
-prGreen('Guess the number !Player edition')
+print('Guess the number !Player edition')
 sleep(2)
-prLightPurple('Made by GanniAndy')
+print('Made by GanniAndy')
 sleep(3)
 
 def helpu():
-    prYellow('In this game you will guess a number choosed by computer.\n'
+    print('In this game you will guess a number choosed by computer.\n'
           'After starting the game ,you will choose the limit of the number.\n'
           'ex:(0,20). 20 is the highest number that the computer will want to choice.')
     sleep(3)
@@ -37,7 +33,7 @@ def gaming():
         print('blank is not a number.GAME OVER!')
         sleep(5)
         quit()
-    prGreen(f'Hurray!!U guessed the number!It was {number}')
+    print(f'Hurray!!U guessed the number!It was {number}')
     sleep(3)
 try:
     while True:
